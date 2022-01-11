@@ -1,0 +1,74 @@
+.chart-holder{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.chart-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: .25rem;
+  transition: 0.3s;
+  margin-bottom: 15px;
+}
+
+.temperature-vs-humidity-effect{
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #8b0000, #3241cc) 1;
+  box-shadow: 0 1px 6px 5px rgba(20,20,20,0.3);
+}
+
+.temperature-vs-humidity-effect:hover{
+  box-shadow: 3px 5px 15px 5px rgba(40, 61, 246, 0.5),
+  -9px 5px 15px 5px rgba(253, 0, 0, 0.5),
+  3px 5px 4px 5px rgba(0,0,0,0);
+}
+
+.tvoc-vs-c02-effect{
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #098b00, #cc5632) 1;
+  box-shadow: 0 1px 6px 5px rgba(20,20,20,0.3);
+}
+
+.tvoc-vs-c02-effect:hover{
+  box-shadow: 3px 5px 15px 5px rgba(246, 98, 40, 0.5),
+  -9px 5px 15px 5px rgba(55, 253, 0, 0.5),
+  3px 5px 4px 5px rgba(0,0,0,0);
+}
+
+.all-values-vs-effect{
+  border-style: solid;
+  border-width: 2px;
+  border-image: conic-gradient(red, #ff8400, #77ff00, #0048ff, blue, magenta, red) 1;
+  box-shadow: 0 1px 6px 5px rgba(20,20,20,0.3);
+}
+
+.all-values-vs-effect:hover{
+  box-shadow: 3px 5px 15px 5px rgba(246, 40, 40, 0.5),
+  -9px 5px 15px 5px rgba(253, 120, 0, 0.5),
+  -7px -5px 15px 5px rgba(13, 208, 1, 0.5),
+  10px -5px 15px 5px rgba(15, 64, 250, 0.5),
+  -10px -7px 27px 1px #8E5CFF,
+  3px 5px 4px 5px rgba(0,0,0,0);
+}
+
+@media only screen and (min-width : 800px){
+  .chart-holder{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .chart-card{
+    width: 700px;
+  }
+}

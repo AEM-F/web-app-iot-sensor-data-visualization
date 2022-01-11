@@ -1,0 +1,77 @@
+.chart-holder{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.chart-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: .25rem;
+  transition: 0.3s;
+  margin-bottom: 15px;
+}
+
+.temperature-effect{
+  border: 2px solid #d60404;
+  box-shadow: 0 1px 6px 5px rgba(20,20,20,0.3);
+}
+
+.temperature-effect:hover{
+  box-shadow: 0 1px 6px 5px #8b0000;
+}
+
+.humidity-effect{
+  border: 2px solid #0469d6;
+  box-shadow: 0 1px 6px 5px rgba(20,20,20,0.3);
+}
+
+.humidity-effect:hover{
+  box-shadow: 0 1px 6px 5px #004f8b;
+}
+
+.pressure-effect{
+  border: 2px solid #7f04d6;
+  box-shadow: 0 1px 6px 5px rgba(20,20,20,0.3);
+}
+
+.pressure-effect:hover{
+  box-shadow: 0 1px 6px 5px #51008b;
+}
+
+.c02-effect{
+  border: 2px solid #d65f04;
+  box-shadow: 0 1px 6px 5px rgba(20,20,20,0.3);
+}
+
+.c02-effect:hover{
+  box-shadow: 0 1px 6px 5px #8b4800;
+}
+
+.tvoc-effect{
+  border: 2px solid #43d604;
+  box-shadow: 0 1px 6px 5px rgba(20,20,20,0.3);
+}
+
+.tvoc-effect:hover{
+  box-shadow: 0 1px 6px 5px #318b00;
+}
+
+@media only screen and (min-width : 800px){
+  .chart-holder{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .chart-card{
+    width: 700px;
+  }
+}

@@ -1,0 +1,30 @@
+<div class="alert alert-danger general-error-container" *ngIf="error">
+  <h4>An error occurred:</h4>
+  <p>{{error}}</p>
+  <button class="btn btn-danger" (click)="onHandleError()">Okay</button>
+</div>
+<div *ngIf="isLoadingData && !error" class="loader-wrapper animate-opacity">
+  <div class="loader">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  Loading...
+</div>
+<div *ngIf="!isLoadingData && !error && sensorValues.length > 0" class="chart-holder">
+  <div class="chart-card temperature-effect">
+    <app-temperature-dist-chart [data]="sensorValues"></app-temperature-dist-chart>
+  </div>
+  <div class="chart-card humidity-effect">
+    <app-humidity-dist-chart [data]="sensorValues"></app-humidity-dist-chart>
+  </div>
+  <div class="chart-card c02-effect">
+    <app-c02-dist-chart [data]="sensorValues"></app-c02-dist-chart>
+  </div>
+  <div class="chart-card pressure-effect">
+    <app-pressure-dist-chart [data]="sensorValues"></app-pressure-dist-chart>
+  </div>
+  <div class="chart-card tvoc-effect">
+    <app-tvoc-dist-chart [data]="sensorValues"></app-tvoc-dist-chart>
+  </div>
+</div>
