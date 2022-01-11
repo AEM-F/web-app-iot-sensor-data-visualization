@@ -6,7 +6,7 @@ The bridge device is registered and transmits the data over MQQT to the IoT Hub.
 The following environmental sensors are supported: Temperature, Humidity, Air pressure, Air quality (CO2 and TVOC) 
 from the Thingy:52. The weather data from AWS IoT is stored in AWS DynamoDB and extracted using a serverless 
 Java backend created using the spring boot as a foundation. The data is visualized in a dashboard created using 
-Angular framework as the foundation and D3.js for chart generation. The visualization will contain the values over 
+Angular framework as the foundation and Chart.js for chart generation. The visualization will contain the values over 
 time, feature comparisons, and distribution. After gathering the data and storing it inside DynamoDB, I want to create 
 a notebook where I can extract it and apply a machine learning algorithm(TBA).
 <br> 
@@ -26,7 +26,7 @@ discover if other environmental measurements like temperature, humidity, and pre
 <h1 align="center">Goals</h1>
 <br>
 The goals I have achieved in this project: 
-❖ Deployment and development of an IoT application 
-❖ Deployment and development of Java RESTful API for backend 
-❖ Visualize data inside a Angular web application 
-❖ Learn and use the Chart.js library 
+<li>Deployment and development of an IoT application</li>
+<li>Deployment and development of Java RESTful API for backend</li> 
+<li>Visualize data inside a Angular web application</li>
+<li>Learn and use the Chart.js library</li>
