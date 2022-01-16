@@ -1,0 +1,124 @@
+.chart-holder{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.chart-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: .25rem;
+  transition: 0.3s;
+  margin-bottom: 15px;
+}
+
+#button-refresh-models{
+  position: fixed;
+  top:1px;
+  left:120px;
+  z-index: 100;
+  width: 110px;
+  height: 40px;
+  text-align: center;
+  border-radius: .25rem;
+  border: 1px solid #5d5d5d;
+  box-shadow: 0 1px 6px 0 #414141;
+  margin: 2px 2px;
+  transition: 0.3s;
+  background: none;
+  color: #e7e7e7;
+}
+
+#button-refresh-models:hover,
+#button-refresh-models:active,
+#button-refresh-models:focus,
+#button-refresh-models:active:focus{
+  border: 1px solid #9500ff;
+  color: #9500ff;
+  box-shadow: 0 1px 3px 0 #9500ff, 0 2px 6px 1px #33026b;
+  text-shadow: -1px -1px 10px #4e0192,1px 1px 10px #4801ac;
+}
+
+.tvoc-c02-effect{
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #098b00, #cc5632) 1;
+  box-shadow: 0 1px 6px 5px rgba(20,20,20,0.3);
+}
+
+.tvoc-c02-effect:hover{
+  box-shadow: 3px 5px 15px 5px rgba(246, 98, 40, 0.5),
+  -9px 5px 15px 5px rgba(55, 253, 0, 0.5),
+  3px 5px 4px 5px rgba(0,0,0,0);
+}
+
+.c02-temperature-effect{
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #8b0000, #cc5632) 1;
+  box-shadow: 0 1px 6px 5px rgba(20,20,20,0.3);
+}
+
+.c02-temperature-effect:hover{
+  box-shadow: 3px 5px 15px 5px rgba(246, 98, 40, 0.5),
+  -9px 5px 15px 5px rgba(253, 0, 0, 0.5),
+  3px 5px 4px 5px rgba(0,0,0,0);
+}
+
+.c02-humidity-effect{
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #003f8b, #cc5632) 1;
+  box-shadow: 0 1px 6px 5px rgba(20,20,20,0.3);
+}
+
+.c02-humidity-effect:hover{
+  box-shadow: 3px 5px 15px 5px rgba(246, 98, 40, 0.5),
+  -9px 5px 15px 5px rgba(0, 72, 253, 0.5),
+  3px 5px 4px 5px rgba(0,0,0,0);
+}
+
+.tvoc-temperature-effect{
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #098b00, #cc3232) 1;
+  box-shadow: 0 1px 6px 5px rgba(20,20,20,0.3);
+}
+
+.tvoc-temperature-effect:hover{
+  box-shadow: 3px 5px 15px 5px rgba(246, 40, 40, 0.5),
+  -9px 5px 15px 5px rgba(55, 253, 0, 0.5),
+  3px 5px 4px 5px rgba(0,0,0,0);
+}
+
+.tvoc-humidity-effect{
+  border-width: 2px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #098b00, #3253cc) 1;
+  box-shadow: 0 1px 6px 5px rgba(20,20,20,0.3);
+}
+
+.tvoc-humidity-effect:hover{
+  box-shadow: 3px 5px 15px 5px rgba(40, 98, 246, 0.5),
+  -9px 5px 15px 5px rgba(55, 253, 0, 0.5),
+  3px 5px 4px 5px rgba(0,0,0,0);
+}
+
+@media only screen and (min-width : 800px){
+  .chart-holder{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .chart-card{
+    width: 700px;
+  }
+}

@@ -1,0 +1,25 @@
+<button class="btn btn-outline-secondary"
+        type="button"
+        id="button-refresh-models"
+        (click)="handleListValues();"><i class="fa fa-refresh"></i> Refresh</button>
+<div class="alert alert-danger general-error-container" *ngIf="error">
+  <h4>An error occurred:</h4>
+  <p>{{error}}</p>
+  <button class="btn btn-danger" (click)="onHandleError()">Okay</button>
+</div>
+<div *ngIf="isLoadingData && !error" class="loader-wrapper animate-opacity">
+  <div class="loader">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  Loading...
+</div>
+<div *ngIf="!isLoadingData && !error && sensorValues.length > 0" class="chart-holder">
+  <div class="chart-card tvoc-c02-effect">
+    <app-regression-chart01 [data]="sensorValues"></app-regression-chart01>
+  </div>
+  <div class="chart-card tvoc-c02-effect">
+    <app-regression-chart02 [data]="sensorValues"></app-regression-chart02>
+  </div>
+</div>

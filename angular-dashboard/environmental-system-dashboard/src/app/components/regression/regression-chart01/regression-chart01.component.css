@@ -1,0 +1,77 @@
+.c02-tvoc-chart-01{
+  width: 100%;
+  height: 300px;
+}
+
+.model-text{
+  margin: 0;
+  padding: 5px;
+  color: rgba(200,200,200, 0.8);
+}
+
+.model-text sup{
+  color: rgba(200,200,200, 0.8);
+}
+
+.predict-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #444444;
+}
+
+.predict-form-title{
+  margin: 0;
+  font-family: 'Audiowide', cursive;
+}
+
+.predict-form .input-group{
+  width: 300px;
+}
+
+.predict-input{
+  border: 1px solid #5d5d5d;
+  background-color: #252129;
+  color: #e7e7e7;
+}
+
+.predict-input:focus,
+#button-predict:focus{
+  border-color: #cc5632;
+  box-shadow: 0 1px 6px 0px #cc5632;
+}
+
+#button-predict:hover{
+  border: 1px solid #cc5632;
+  color: #cc5632;
+  background-color: transparent;
+}
+
+.predicted-value-holder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 300px;
+  border: 1px solid #cc5632;
+  color: #cc5632;
+  border-radius: .25rem;
+}
+
+.predicted-value-holder .predicted-value{
+  margin: 0;
+  color: #cc5632;
+}
+
+@media only screen and (min-width : 800px){
+  .c02-tvoc-chart-01{
+    width: 700px;
+    height: 200px;
+  }
+
+
+}

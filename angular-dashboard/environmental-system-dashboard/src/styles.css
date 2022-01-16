@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 /**Scrollbar style**/
 /* Works on Firefox */
 * {
@@ -194,6 +195,25 @@ body{
 app-metrics{
   display: flex;
   width: 100%;
+}
+
+app-regression-charts{
+  display: flex;
+  width: 100%;
+}
+
+app-regression-chart01{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+app-regression-chart02{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*app-temperature-line-chart{*/

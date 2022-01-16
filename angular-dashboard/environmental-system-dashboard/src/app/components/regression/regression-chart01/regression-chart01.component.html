@@ -1,0 +1,25 @@
+<div class="predict-form">
+  <p class="predict-form-title">Predict C02 value</p>
+  <div class="input-group">
+    <input #searchInput
+           type="text"
+           class="form-control predict-input"
+           placeholder="Enter TVOC value"
+           (keyup.enter)="onPredictC02(searchInput.value)">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary"
+              type="button"
+              id="button-predict"
+              (click)="onPredictC02(searchInput.value)">Predict</button>
+    </div>
+  </div>
+  <div class="predicted-value-holder" *ngIf="predictedValue.length > 0">
+    <p class="predicted-value">Predicted value is: {{predictedValue}}</p>
+  </div>
+</div>
+<p class="model-text">Equation: {{regressionData.string}} & R<sup>2</sup>: {{regressionData.r2}}</p>
+<canvas class="c02-tvoc-chart-01" baseChart
+        [data]="scatterChartData"
+        [options]="scatterChartOptions"
+        [type]="scatterChartType">
+</canvas>

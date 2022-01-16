@@ -25,6 +25,9 @@ import {NgChartsModule} from "ng2-charts";
 import { AllValuesLineChartComponent } from './components/comparison/all-values-line-chart/all-values-line-chart.component';
 import { TempVsHumidityLineChartComponent } from './components/comparison/temp-vs-humidity-line-chart/temp-vs-humidity-line-chart.component';
 import { C02VsTvocLineChartComponent } from './components/comparison/c02-vs-tvoc-line-chart/c02-vs-tvoc-line-chart.component';
+import { RegressionChart01Component } from './components/regression/regression-chart01/regression-chart01.component';
+import { RegressionChartsComponent } from './components/regression/regression-charts/regression-charts.component';
+import { RegressionChart02Component } from './components/regression/regression-chart02/regression-chart02.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,10 @@ import { C02VsTvocLineChartComponent } from './components/comparison/c02-vs-tvoc
     ComparisonChartsComponent,
     AllValuesLineChartComponent,
     TempVsHumidityLineChartComponent,
-    C02VsTvocLineChartComponent
+    C02VsTvocLineChartComponent,
+    RegressionChart01Component,
+    RegressionChartsComponent,
+    RegressionChart02Component
   ],
   imports: [
     BrowserModule,
